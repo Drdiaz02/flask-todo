@@ -15,10 +15,11 @@ Tasks
 
 Clone this repository in order to access the starter code for a simple `flask` application. Add the following enhancements:
 
-1. Update the `/items` route to support adding items in response to a `POST` request. Complete a 302 redirect to `/items` on success.
-2. Update the add item form to prevent users from submitting empty todo items
-1. Update the `/items` route to support deleting items in response to a `POST` request. Complete a 302 redirect to `/items` on success.
-3. Secure the page to prevent malicious users from being able to modify the HTML structure of the page. Consider an input such as `"><h1>Hacked</h1><p "` and [html.quote](https://docs.python.org/3/library/html.html#html.escape).
+1. Use a redirect 302 to point the root page `/` to `/items`.
+2. Update the `/items` route to support adding items in response to a `POST` request. Complete a 302 redirect to `/items` on success.
+3. Update the add item form to prevent users from submitting empty todo items
+4. Update the `/items` route to support deleting items in response to a `POST` request. Complete a 302 redirect to `/items` on success.
+5. Secure the page to prevent malicious users from being able to modify the HTML structure of the page. Consider an input such as `"><h1>Hacked</h1><p "` and [html.quote](https://docs.python.org/3/library/html.html#html.escape).
 
 Usage
 -----
