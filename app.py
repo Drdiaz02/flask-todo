@@ -20,7 +20,7 @@ template = """
       {items}
       </ul>
       <form action="/items" method="post">
-        <input type="text" name="item_add">
+        <label>New Todo Item: <input type="text" name="item_add"></label>
         <input type="submit" value="Add Item">
       </form>
     </main>
