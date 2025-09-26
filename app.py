@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import send_file, request, redirect
+from flask import request, redirect
 from html import escape
 
 app = Flask(__name__)
