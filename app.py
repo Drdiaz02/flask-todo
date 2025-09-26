@@ -30,6 +30,7 @@ template = """
 
 items = ["Finish Web Apps Project"]
 
+
 def get_item_component(item_text):
     return f"""
         <li>
@@ -40,11 +41,13 @@ def get_item_component(item_text):
         </li>
     """
 
-@app.route('/items', methods=["GET"])
+
+@app.route("/items", methods=["GET"])
 def list_items():
     html = "".join([get_item_component(li) for li in items])
 
     return template.replace("{items}", html)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     app.run(debug=True)
