@@ -1,6 +1,8 @@
 Todo App with Flask
 ===================
 
+![Todo List](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Checklist-icon.svg/250px-Checklist-icon.svg.png)
+
 Learning Objectives
 -------------------
 
