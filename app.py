@@ -36,7 +36,8 @@ def get_item_component(item_text):
         <li>
         <form action="/items" method="post">
             <input type="submit" value="Mark Complete">
-            <input type="text" name="item_del" value="{item_text}" readonly>
+            <input type="hidden" name="item_del" value="{item_text}" readonly>
+            {item_text}
         </form>
         </li>
     """
