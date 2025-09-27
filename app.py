@@ -49,6 +49,10 @@ def list_items():
 
     return template.replace("{items}", html)
 
+# 1. Use a redirect 302 to point the root page `/` to `/items`.
+@app.route("/")
+def reroute():
+    return redirect("/items", 302)
 
 if __name__ == "__main__":
     app.run(debug=True)
