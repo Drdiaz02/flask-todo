@@ -42,9 +42,17 @@ def get_item_component(item_text):
         </li>
     """
 
-
-@app.route("/items", methods=["GET"])
+#2. Update the `/items` route to support adding items in response to a `POST` request. Complete a 302 redirect to `/items` on success.
+@app.route("/items", methods=["GET", "POST"])
 def list_items():
+    # if block to look for method
+    if request.method == "POST":
+        #3. Update the add item form to prevent users from submitting empty todo items
+        new_item = request.form.get("item_add", "").strip()
+        if new_item != "":
+            items.append(new_item)
+        # return stops the rest of code from running
+        return redirect("/items")
     html = "".join([get_item_component(li) for li in items])
 
     return template.replace("{items}", html)
